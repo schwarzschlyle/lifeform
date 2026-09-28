@@ -1,0 +1,41 @@
+slug: thicket-browser
+name: Thicket Browser
+summary: Solitary browser of thickets and forest edges.
+hue: 0.28
+genes:
+  body_mass: 90
+  limb_ratio: 0.45
+  armor: 0.3
+  weaponry: 0.45
+  insulation: 0.5
+  fat_capacity: 0.15
+  crypsis: 0.6
+  ornament: 0.2
+  pattern: 0.5
+  swim_skill: 0.4
+  stamina: 3
+  endothermy: 1.0
+  thermal_optimum: 20
+  thermal_breadth: 16
+  fiber_affinity: 0.85
+  soft_plant_affinity: 0.35
+  animal_affinity: 0.0
+  grazer_browser: 0.85
+  visual_acuity: 0.5
+  night_vision: 0.5
+  olfaction: 0.6
+  hearing: 0.7
+  vocal_capacity: 0.3
+  offspring_investment: 0.8
+  precociality: 0.7
+  parental_care: 0.7
+  boldness: 0.4
+  sociability: 0.2
+  aggression: 0.4
+  vigilance: 0.6
+  patience: 0.6
+  activity_phase: 0.5
+  decisiveness: 3.0
+instincts:
+- freeze_first
+- open_ground_wariness

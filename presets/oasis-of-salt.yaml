@@ -1,0 +1,49 @@
+slug: oasis-of-salt
+title: Oasis of Salt
+biome: desert
+description: Water is the limiting resource; life clusters around oases, and daytime
+  heat kills.
+question: Does activity shift toward the night, and does water economy improve?
+palette: oasis-of-salt
+grid:
+  width: 160
+  height: 160
+terrain:
+  water_fraction: 0.0
+  moisture_base: 0.08
+  feature_stamps:
+  - kind: oases
+    count: 4
+    min_radius: 3
+    max_radius: 5
+  - kind: wadi
+    count: 1
+    min_radius: 4
+    max_radius: 6
+climate:
+  equator_temperature_c: 30
+  latitudinal_range_c: 6
+  seasonal_amplitude_c: 6
+  diurnal_amplitude_c: 20
+  weather_profile: arid
+  rain_mm_per_tick: 4.0
+founders:
+- archetype: burrow-hopper
+  count: 35
+  groups: 4
+- archetype: bristle-forager
+  count: 20
+  groups: 3
+- archetype: grub-snuffler
+  count: 15
+  groups: 3
+- archetype: shell-crawler
+  count: 15
+  groups: 3
+- archetype: stripe-stalker
+  count: 4
+  groups: 2
+targets:
+  herbivores: 80
+  predators: 8
+  max_population: 280

@@ -1,0 +1,46 @@
+slug: galapagos-scatter
+title: Galápagos Scatter
+biome: archipelago
+description: 'Islands with different food menus, colonized from a few founders: the
+  classic adaptive-radiation setup.'
+question: Do island populations radiate in diet and size?
+palette: galapagos-scatter
+grid:
+  width: 160
+  height: 160
+terrain:
+  water_fraction: 0.72
+  moisture_base: 0.35
+  lattice_cells: 6
+  mountain_strength: 0.4
+  deep_water_depth_fraction: 0.15
+climate:
+  equator_temperature_c: 27
+  latitudinal_range_c: 4
+  seasonal_amplitude_c: 2
+  diurnal_amplitude_c: 5
+  weather_profile: temperate
+  rain_mm_per_tick: 1.5
+disturbances:
+  droughts:
+  - tick: 700
+    duration_ticks: 144
+    precipitation_factor: 0.25
+  rafting_probability: 0.002
+ecology:
+  reproduction:
+    isolation_distance: 0.18
+founders:
+- archetype: bristle-forager
+  count: 40
+  groups: 2
+- archetype: burrow-hopper
+  count: 20
+  groups: 2
+- archetype: reed-wader
+  count: 15
+  groups: 2
+targets:
+  herbivores: 70
+  predators: 0
+  max_population: 260

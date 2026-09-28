@@ -1,0 +1,55 @@
+slug: the-sundering
+title: The Sundering
+biome: temperate continent
+description: One population, then an impassable rift, then divergence under different
+  climates.
+question: How fast does allopatric speciation happen, and is it drift or selection?
+palette: the-sundering
+default_ticks: 2000
+grid:
+  width: 192
+  height: 192
+terrain:
+  water_fraction: 0.03
+  moisture_base: 0.55
+climate:
+  equator_temperature_c: 20
+  latitudinal_range_c: 8
+  seasonal_amplitude_c: 8
+  diurnal_amplitude_c: 6
+  weather_profile: temperate
+  rain_mm_per_tick: 2.0
+  regional_drifts:
+  - band: inner
+    temperature_c: 3.0
+    start_tick: 500
+    end_tick: 1500
+  - band: outer
+    precipitation_factor: 0.7
+    start_tick: 500
+    end_tick: 1500
+disturbances:
+  rift:
+    open_tick: 500
+    duration_ticks: 100
+    channel_width: 3
+ecology:
+  reproduction:
+    isolation_distance: 0.18
+founders:
+- archetype: meadow-grazer
+  count: 40
+  groups: 4
+- archetype: bristle-forager
+  count: 20
+  groups: 3
+- archetype: burrow-hopper
+  count: 20
+  groups: 3
+- archetype: stripe-stalker
+  count: 5
+  groups: 2
+targets:
+  herbivores: 85
+  predators: 8
+  max_population: 300

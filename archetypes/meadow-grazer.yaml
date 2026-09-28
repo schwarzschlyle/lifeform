@@ -1,0 +1,48 @@
+slug: meadow-grazer
+name: Meadow Grazer
+summary: Herding grazer of open plains.
+hue: 0.1
+genes:
+  body_mass: 40
+  limb_ratio: 0.6
+  armor: 0.1
+  weaponry: 0.3
+  insulation: 0.4
+  fat_capacity: 0.12
+  crypsis: 0.3
+  ornament: 0.3
+  pattern: 0.2
+  swim_skill: 0.3
+  dig_skill: 0.1
+  stamina: 4
+  endothermy: 1.0
+  thermal_optimum: 24
+  thermal_breadth: 14
+  water_efficiency: 0.3
+  fiber_affinity: 0.9
+  soft_plant_affinity: 0.25
+  animal_affinity: 0.0
+  grazer_browser: 0.15
+  visual_acuity: 0.7
+  night_vision: 0.3
+  olfaction: 0.5
+  hearing: 0.6
+  vocal_capacity: 0.6
+  offspring_investment: 0.75
+  precociality: 0.8
+  parental_care: 0.7
+  breeding_seasonality: 0.4
+  boldness: 0.3
+  curiosity: 0.4
+  sociability: 0.9
+  aggression: 0.25
+  vigilance: 0.75
+  altruism: 0.6
+  territoriality: 0.2
+  activity_phase: 0.85
+  decisiveness: 3.0
+instincts:
+- herd_cohesion
+- flee_early
+- alarm_calling
+- migration_urge

@@ -1,0 +1,45 @@
+slug: stripe-stalker
+name: Stripe Stalker
+summary: Solitary ambush predator.
+hue: 0.04
+genes:
+  body_mass: 60
+  limb_ratio: 0.6
+  armor: 0.1
+  weaponry: 0.85
+  insulation: 0.3
+  fat_capacity: 0.15
+  crypsis: 0.7
+  ornament: 0.2
+  pattern: 0.9
+  swim_skill: 0.4
+  climb_skill: 0.2
+  dig_skill: 0.1
+  stamina: 2
+  endothermy: 1.0
+  thermal_optimum: 26
+  thermal_breadth: 14
+  fiber_affinity: 0.0
+  soft_plant_affinity: 0.1
+  animal_affinity: 0.95
+  visual_acuity: 0.7
+  night_vision: 0.8
+  olfaction: 0.6
+  hearing: 0.7
+  vocal_capacity: 0.5
+  maturity_rate: 0.4
+  offspring_investment: 0.6
+  precociality: 0.2
+  parental_care: 0.7
+  boldness: 0.75
+  curiosity: 0.4
+  sociability: 0.15
+  aggression: 0.7
+  vigilance: 0.5
+  patience: 0.85
+  territoriality: 0.7
+  activity_phase: 0.25
+  decisiveness: 3.5
+instincts:
+- ambush_hunter
+- territorial_marking

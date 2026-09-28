@@ -1,0 +1,29 @@
+slug: carrion-strider
+name: Carrion Strider
+summary: Long-legged scavenger with a keen nose.
+hue: 0.66
+genes:
+  body_mass: 10
+  limb_ratio: 0.7
+  weaponry: 0.3
+  fat_capacity: 0.15
+  olfaction: 0.95
+  carrion_tolerance: 0.9
+  stamina: 4
+  endothermy: 1.0
+  fiber_affinity: 0.05
+  soft_plant_affinity: 0.2
+  animal_affinity: 0.9
+  visual_acuity: 0.8
+  hearing: 0.5
+  vocal_capacity: 0.5
+  offspring_investment: 0.55
+  boldness: 0.55
+  curiosity: 0.6
+  sociability: 0.5
+  aggression: 0.35
+  activity_phase: 0.8
+  decisiveness: 3.0
+instincts:
+- scavenging
+- kleptoparasitism

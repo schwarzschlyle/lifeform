@@ -1,0 +1,51 @@
+slug: ashfall-caldera
+title: Ashfall Caldera
+biome: volcanic highland
+description: A cold highland with warm, toxic volcanic valleys and periodic destruction.
+question: Does disturbance favor fast breeding and toxin resistance?
+palette: ashfall-caldera
+grid:
+  width: 160
+  height: 160
+terrain:
+  water_fraction: 0.05
+  moisture_base: 0.45
+  mountain_strength: 0.5
+  feature_stamps:
+  - kind: vents
+    count: 6
+    min_radius: 3
+    max_radius: 6
+climate:
+  equator_temperature_c: 10
+  latitudinal_range_c: 6
+  seasonal_amplitude_c: 8
+  diurnal_amplitude_c: 6
+  weather_profile: volcanic
+  rain_mm_per_tick: 2.0
+disturbances:
+  eruption_rate_per_tick: 0.0025
+  eruptions:
+  - tick: 600
+    lava_radius: 6
+    ash_radius: 25
+founders:
+- archetype: burrow-hopper
+  count: 30
+  groups: 3
+- archetype: bristle-forager
+  count: 20
+  groups: 2
+- archetype: carrion-strider
+  count: 10
+  groups: 2
+- archetype: shell-crawler
+  count: 10
+  groups: 2
+- archetype: pack-runner
+  count: 6
+  groups: 2
+targets:
+  herbivores: 75
+  predators: 8
+  max_population: 260

@@ -1,0 +1,51 @@
+slug: red-queen-pit
+title: Red Queen Pit
+biome: minimal arena
+description: 'A clean coevolution experiment: one prey, one predator, high mutation,
+  constant climate.'
+question: Do predator and prey cycle and escalate an arms race?
+palette: red-queen-pit
+default_ticks: 3000
+grid:
+  width: 96
+  height: 96
+terrain:
+  water_fraction: 0.0
+  moisture_base: 0.4
+  mountain_strength: 0.0
+  feature_stamps:
+  - kind: waterholes
+    count: 2
+    min_radius: 2
+    max_radius: 3
+  - kind: kopjes
+    count: 8
+    min_radius: 2
+    max_radius: 3
+  max_elevation_m: 200
+climate:
+  equator_temperature_c: 22
+  latitudinal_range_c: 0
+  seasonal_amplitude_c: 0
+  diurnal_amplitude_c: 5
+  weather_profile: constant
+  rain_mm_per_tick: 1.5
+ecology:
+  evolution:
+    mutation_probability: 0.04
+founders:
+- archetype: burrow-hopper
+  count: 60
+  groups: 4
+  name: Pit Hopper
+  overrides:
+    body_mass: 3
+    fiber_affinity: 0.6
+    soft_plant_affinity: 0.7
+- archetype: pack-runner
+  count: 10
+  groups: 2
+targets:
+  herbivores: 70
+  predators: 10
+  max_population: 220

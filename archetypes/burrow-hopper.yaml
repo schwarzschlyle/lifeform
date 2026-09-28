@@ -1,0 +1,45 @@
+slug: burrow-hopper
+name: Burrow Hopper
+summary: Small, fast-breeding burrowing granivore.
+hue: 0.36
+genes:
+  body_mass: 2
+  limb_ratio: 0.55
+  armor: 0.0
+  weaponry: 0.05
+  insulation: 0.5
+  fat_capacity: 0.1
+  crypsis: 0.6
+  pattern: 0.3
+  swim_skill: 0.1
+  dig_skill: 0.8
+  stamina: 2
+  endothermy: 1.0
+  thermal_optimum: 22
+  thermal_breadth: 14
+  fiber_affinity: 0.55
+  soft_plant_affinity: 0.7
+  animal_affinity: 0.05
+  grazer_browser: 0.3
+  visual_acuity: 0.6
+  night_vision: 0.6
+  olfaction: 0.6
+  hearing: 0.8
+  vocal_capacity: 0.3
+  maturity_rate: 0.8
+  offspring_investment: 0.2
+  precociality: 0.2
+  parental_care: 0.5
+  breeding_seasonality: 0.3
+  boldness: 0.2
+  curiosity: 0.5
+  sociability: 0.5
+  aggression: 0.1
+  vigilance: 0.8
+  patience: 0.4
+  activity_phase: 0.5
+  decisiveness: 3.0
+instincts:
+- den_dwelling
+- freeze_first
+- food_caching

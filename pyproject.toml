@@ -1,0 +1,70 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lifeform"
+version = "0.1.0"
+description = "A 2D artificial ecology where every organism's action comes from one Jev call per tick."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+dependencies = [
+  "typesafe-sdk>=0.7.1,<0.8",
+  "numpy>=2.3",
+  "pydantic>=2.12",
+  "pyyaml>=6",
+  "typer>=0.20",
+  "rich>=14",
+  "msgpack>=1.1",
+  "fastapi>=0.120",
+  "uvicorn>=0.38",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.24", "hypothesis>=6.100", "ruff>=0.6", "mypy>=1.11", "types-PyYAML"]
+
+[project.scripts]
+lifeform = "lifeform.cli.app:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lifeform"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+addopts = ["-ra", "--strict-markers"]
+markers = ["live: requires TYPESAFE_API_KEY and network access"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP", "SIM", "C4", "RET", "PIE", "PT", "RUF", "N", "ASYNC", "PERF", "PL"]
+ignore = ["PLR0913", "PLR0917", "PLR2004", "PLR0911", "PLR0912", "PLR0914", "PLR6301", "RUF001", "RUF002", "RUF003", "PLC0415", "PERF203", "PLR0915", "N818"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["PLR", "N802", "RUF012"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["lifeform"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unreachable = true
+mypy_path = "src"
+packages = ["lifeform"]
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = ["msgpack.*", "uvicorn.*"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["lifeform.world.*", "lifeform.evolution.*", "lifeform.simulation.disturbances"]
+warn_return_any = false

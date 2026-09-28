@@ -1,0 +1,36 @@
+slug: grub-snuffler
+name: Grub Snuffler
+summary: Small nocturnal insectivore.
+hue: 0.74
+genes:
+  body_mass: 1
+  limb_ratio: 0.5
+  dig_skill: 0.6
+  insulation: 0.5
+  fat_capacity: 0.1
+  crypsis: 0.6
+  stamina: 2
+  endothermy: 1.0
+  thermal_optimum: 20
+  thermal_breadth: 14
+  night_vision: 0.8
+  olfaction: 0.85
+  hearing: 0.8
+  visual_acuity: 0.3
+  fiber_affinity: 0.05
+  soft_plant_affinity: 0.3
+  animal_affinity: 0.9
+  vocal_capacity: 0.3
+  maturity_rate: 0.75
+  offspring_investment: 0.3
+  precociality: 0.2
+  parental_care: 0.5
+  boldness: 0.3
+  curiosity: 0.6
+  sociability: 0.2
+  vigilance: 0.7
+  activity_phase: 0.1
+  decisiveness: 3.0
+instincts:
+- den_dwelling
+- neophobia

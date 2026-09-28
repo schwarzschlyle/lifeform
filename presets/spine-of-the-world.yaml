@@ -1,0 +1,43 @@
+slug: spine-of-the-world
+title: Spine of the World
+biome: mountains
+description: A mountain range that folds a whole climate gradient into a short distance.
+question: Do clines in size, fur and fat form along the altitude gradient?
+palette: spine-of-the-world
+grid:
+  width: 192
+  height: 192
+terrain:
+  water_fraction: 0.05
+  moisture_base: 0.5
+  mountain_strength: 0.9
+  ridge_strength: 0.6
+  max_elevation_m: 3500
+  rock_elevation_fraction: 0.9
+climate:
+  equator_temperature_c: 22
+  latitudinal_range_c: 4
+  seasonal_amplitude_c: 8
+  diurnal_amplitude_c: 7
+  weather_profile: temperate
+  rain_mm_per_tick: 2.0
+founders:
+- archetype: meadow-grazer
+  count: 30
+  groups: 3
+- archetype: thicket-browser
+  count: 15
+  groups: 2
+- archetype: burrow-hopper
+  count: 20
+  groups: 3
+- archetype: pack-runner
+  count: 6
+  groups: 2
+- archetype: stripe-stalker
+  count: 4
+  groups: 2
+targets:
+  herbivores: 80
+  predators: 10
+  max_population: 280

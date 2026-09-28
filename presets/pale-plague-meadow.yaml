@@ -1,0 +1,44 @@
+slug: pale-plague-meadow
+title: Pale Plague Meadow
+biome: grassland
+description: A crowded grassland meets a new pathogen that spreads at the waterholes.
+question: How do epidemics, immunity and virulence evolve?
+palette: pale-plague-meadow
+grid:
+  width: 160
+  height: 160
+terrain:
+  water_fraction: 0.0
+  moisture_base: 0.45
+  feature_stamps:
+  - kind: waterholes
+    count: 5
+    min_radius: 2
+    max_radius: 4
+climate:
+  equator_temperature_c: 22
+  latitudinal_range_c: 6
+  seasonal_amplitude_c: 6
+  diurnal_amplitude_c: 7
+  weather_profile: temperate
+  rain_mm_per_tick: 2.0
+disturbances:
+  epidemic:
+    tick: 300
+founders:
+- archetype: meadow-grazer
+  count: 70
+  groups: 4
+- archetype: bristle-forager
+  count: 20
+  groups: 2
+- archetype: pack-runner
+  count: 6
+  groups: 2
+- archetype: carrion-strider
+  count: 6
+  groups: 2
+targets:
+  herbivores: 110
+  predators: 10
+  max_population: 320

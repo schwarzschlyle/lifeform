@@ -1,0 +1,42 @@
+slug: pack-runner
+name: Pack Runner
+summary: Social pursuit predator.
+hue: 0.8
+genes:
+  body_mass: 25
+  limb_ratio: 0.75
+  weaponry: 0.6
+  insulation: 0.5
+  fat_capacity: 0.12
+  crypsis: 0.4
+  pattern: 0.2
+  swim_skill: 0.4
+  stamina: 5
+  endothermy: 1.0
+  thermal_optimum: 20
+  thermal_breadth: 18
+  fiber_affinity: 0.05
+  soft_plant_affinity: 0.15
+  animal_affinity: 0.9
+  visual_acuity: 0.6
+  night_vision: 0.6
+  olfaction: 0.85
+  hearing: 0.8
+  vocal_capacity: 0.8
+  offspring_investment: 0.45
+  precociality: 0.2
+  parental_care: 0.8
+  boldness: 0.6
+  curiosity: 0.5
+  sociability: 0.85
+  aggression: 0.6
+  vigilance: 0.5
+  patience: 0.4
+  altruism: 0.7
+  territoriality: 0.5
+  activity_phase: 0.5
+  decisiveness: 3.0
+instincts:
+- pursuit_hunter
+- pack_hunting
+- food_sharing

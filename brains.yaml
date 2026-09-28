@@ -1,0 +1,33 @@
+active: jev
+providers:
+  jev:
+    title: Jev
+    description: TypeSafe AI's hosted System One model. Pay per input token; limited to 1,200 requests a minute per key.
+    setup_hint: Set TYPESAFE_API_KEY or paste the key when asked, and check your internet connection.
+    base_url: https://api.typesafe.ai
+    model: jev-1.13.0
+    api_key_env: TYPESAFE_API_KEY
+    api_key_required: true
+    requests_per_minute: 1200
+    tokens_per_second: 250000
+    price_usd_per_million_input_tokens: 0.042
+    host_usd_per_hour: 0.0
+    max_in_flight: 32
+    request_timeout_seconds: 5.0
+  kev:
+    title: Kev
+    description: An open, Jev-style System One model you serve yourself (github.com/jaredpalmer/kev). No per-token
+      price; set host_usd_per_hour to your GPU's hourly rate to include it in estimates and budgets.
+    setup_hint: 'Start a Kev server first. In the kev repo: uv sync --extra serve && uv run --extra serve python -m
+      kev.serve --run jaredpalmer/kev-4b --port 8009. Or deploy one on Modal (kev/skills/kev-deploy) and set base_url
+      to its https address and KEV_API_KEY to its key.'
+    base_url: http://127.0.0.1:8009
+    model: kev-latest
+    api_key_env: KEV_API_KEY
+    api_key_required: false
+    requests_per_minute: 3000
+    tokens_per_second: 1000000
+    price_usd_per_million_input_tokens: 0.0
+    host_usd_per_hour: 0.0
+    max_in_flight: 64
+    request_timeout_seconds: 30.0

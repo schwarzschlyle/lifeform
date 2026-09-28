@@ -1,0 +1,32 @@
+slug: reed-wader
+name: Reed Wader
+summary: Amphibious omnivore of shallows and marsh.
+hue: 0.5
+genes:
+  body_mass: 8
+  limb_ratio: 0.6
+  swim_skill: 0.8
+  insulation: 0.3
+  fat_capacity: 0.12
+  stamina: 3
+  endothermy: 1.0
+  thermal_optimum: 24
+  thermal_breadth: 14
+  water_efficiency: 0.2
+  fiber_affinity: 0.3
+  soft_plant_affinity: 0.6
+  animal_affinity: 0.6
+  visual_acuity: 0.8
+  olfaction: 0.5
+  hearing: 0.6
+  vocal_capacity: 0.7
+  offspring_investment: 0.5
+  precociality: 0.6
+  parental_care: 0.6
+  sociability: 0.6
+  vigilance: 0.7
+  activity_phase: 0.85
+  decisiveness: 3.0
+instincts:
+- water_affinity
+- sentinel

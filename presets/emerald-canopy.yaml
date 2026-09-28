@@ -1,0 +1,42 @@
+slug: emerald-canopy
+title: Emerald Canopy
+biome: rainforest
+description: Abundant but patchy food under a dark canopy, where many niches coexist.
+question: Does warning coloration evolve alongside toxicity?
+palette: emerald-canopy
+grid:
+  width: 160
+  height: 160
+terrain:
+  water_fraction: 0.06
+  moisture_base: 0.82
+climate:
+  equator_temperature_c: 27
+  latitudinal_range_c: 3
+  seasonal_amplitude_c: 1.5
+  diurnal_amplitude_c: 4
+  weather_profile: rainforest
+  rain_mm_per_tick: 2.5
+founders:
+- archetype: bristle-forager
+  count: 25
+  groups: 3
+- archetype: shell-crawler
+  count: 20
+  groups: 3
+  overrides:
+    toxicity: 0.45
+    ornament: 0.45
+- archetype: grub-snuffler
+  count: 20
+  groups: 3
+- archetype: reed-wader
+  count: 10
+  groups: 2
+- archetype: stripe-stalker
+  count: 5
+  groups: 2
+targets:
+  herbivores: 80
+  predators: 8
+  max_population: 280

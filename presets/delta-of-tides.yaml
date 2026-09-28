@@ -1,0 +1,50 @@
+slug: delta-of-tides
+title: Delta of Tides
+biome: wetland delta
+description: A landscape that floods and drains every year.
+question: Do amphibious traits and flood-timed breeding evolve?
+palette: delta-of-tides
+grid:
+  width: 192
+  height: 192
+terrain:
+  water_fraction: 0.25
+  moisture_base: 0.72
+  lattice_cells: 4
+  mountain_strength: 0.0
+  river_threshold_fraction: 0.002
+climate:
+  equator_temperature_c: 26
+  latitudinal_range_c: 6
+  seasonal_amplitude_c: 5
+  diurnal_amplitude_c: 6
+  weather_profile: temperate
+  rain_mm_per_tick: 2.5
+disturbances:
+  flood_pulse:
+    amplitude_m: 1.2
+    peak_year_fraction: 0.6
+    floodplain_elevation_fraction: 0.08
+founders:
+- archetype: reed-wader
+  count: 35
+  groups: 3
+- archetype: meadow-grazer
+  count: 25
+  groups: 2
+  overrides:
+    swim_skill: 0.5
+- archetype: shell-crawler
+  count: 15
+  groups: 2
+- archetype: stripe-stalker
+  count: 5
+  groups: 2
+  name: Mire Lurker
+  overrides:
+    swim_skill: 0.8
+    endothermy: 0.3
+targets:
+  herbivores: 80
+  predators: 8
+  max_population: 280

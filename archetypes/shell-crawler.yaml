@@ -1,0 +1,46 @@
+slug: shell-crawler
+name: Shell Crawler
+summary: Armored, slow ectotherm.
+hue: 0.55
+genes:
+  body_mass: 5
+  limb_ratio: 0.2
+  armor: 0.85
+  weaponry: 0.2
+  insulation: 0.1
+  fat_capacity: 0.2
+  crypsis: 0.5
+  ornament: 0.3
+  toxicity: 0.2
+  pattern: 0.6
+  swim_skill: 0.4
+  dig_skill: 0.3
+  stamina: 1.5
+  endothermy: 0.1
+  thermal_optimum: 30
+  thermal_breadth: 10
+  metabolic_scope: 0.9
+  water_efficiency: 0.6
+  longevity: 0.9
+  fiber_affinity: 0.55
+  soft_plant_affinity: 0.55
+  animal_affinity: 0.5
+  visual_acuity: 0.5
+  night_vision: 0.2
+  olfaction: 0.6
+  hearing: 0.3
+  vocal_capacity: 0.1
+  offspring_investment: 0.3
+  precociality: 0.9
+  parental_care: 0.1
+  boldness: 0.4
+  curiosity: 0.3
+  sociability: 0.2
+  aggression: 0.2
+  vigilance: 0.4
+  patience: 0.8
+  activity_phase: 0.9
+  decisiveness: 3.0
+instincts:
+- basking
+- play_dead

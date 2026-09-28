@@ -1,0 +1,39 @@
+slug: bristle-forager
+name: Bristle Forager
+summary: Generalist omnivore.
+hue: 0.45
+genes:
+  body_mass: 15
+  limb_ratio: 0.4
+  armor: 0.2
+  weaponry: 0.35
+  insulation: 0.4
+  fat_capacity: 0.2
+  crypsis: 0.4
+  dig_skill: 0.5
+  swim_skill: 0.3
+  climb_skill: 0.2
+  stamina: 3
+  endothermy: 1.0
+  thermal_optimum: 24
+  thermal_breadth: 18
+  fiber_affinity: 0.45
+  soft_plant_affinity: 0.6
+  animal_affinity: 0.45
+  visual_acuity: 0.5
+  olfaction: 0.8
+  hearing: 0.6
+  vocal_capacity: 0.5
+  offspring_investment: 0.4
+  precociality: 0.4
+  parental_care: 0.6
+  boldness: 0.55
+  curiosity: 0.7
+  sociability: 0.55
+  aggression: 0.45
+  vigilance: 0.5
+  activity_phase: 0.8
+  decisiveness: 3.0
+instincts:
+- neophilia
+- kleptoparasitism

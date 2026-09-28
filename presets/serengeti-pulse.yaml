@@ -1,0 +1,62 @@
+slug: serengeti-pulse
+title: Serengeti Pulse
+biome: savanna
+description: 'A savanna whose rains move: a precipitation belt sweeps east and west
+  once a year, and the grass wave moves with it.'
+question: Does migration emerge from a moving food pulse?
+palette: serengeti-pulse
+grid:
+  width: 192
+  height: 192
+calendar:
+  season_names:
+  - early wet
+  - late wet
+  - early dry
+  - late dry
+terrain:
+  water_fraction: 0.03
+  moisture_base: 0.32
+  mountain_strength: 0.2
+  feature_stamps:
+  - kind: waterholes
+    count: 7
+    min_radius: 2
+    max_radius: 4
+  - kind: kopjes
+    count: 12
+    min_radius: 2
+    max_radius: 3
+climate:
+  equator_temperature_c: 30
+  latitudinal_range_c: 6
+  seasonal_amplitude_c: 3
+  diurnal_amplitude_c: 7
+  weather_profile: tropical_wet_dry
+  rain_mm_per_tick: 3.0
+  rain_belt:
+    amplitude_fraction_of_width: 0.35
+    band_width_fraction: 0.2
+disturbances:
+  lightning_fire_probability: 0.02
+  fire_spread_probability: 0.35
+founders:
+- archetype: meadow-grazer
+  count: 50
+  groups: 3
+- archetype: thicket-browser
+  count: 12
+  groups: 2
+- archetype: pack-runner
+  count: 8
+  groups: 2
+- archetype: stripe-stalker
+  count: 4
+  groups: 2
+- archetype: carrion-strider
+  count: 6
+  groups: 2
+targets:
+  herbivores: 90
+  predators: 12
+  max_population: 300

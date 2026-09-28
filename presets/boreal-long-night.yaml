@@ -1,0 +1,38 @@
+slug: boreal-long-night
+title: Boreal Long Night
+biome: taiga
+description: 'A world ruled by winter: deep snow, short days, and stored fat as the
+  currency of survival.'
+question: Do bodies grow larger and better insulated in the cold (Bergmann's rule)?
+palette: boreal-long-night
+grid:
+  width: 160
+  height: 160
+terrain:
+  water_fraction: 0.1
+  moisture_base: 0.55
+climate:
+  equator_temperature_c: 4
+  latitudinal_range_c: 10
+  seasonal_amplitude_c: 18
+  diurnal_amplitude_c: 5
+  day_length_amplitude_hours: 8
+  weather_profile: boreal
+  rain_mm_per_tick: 2.0
+founders:
+- archetype: thicket-browser
+  count: 30
+  groups: 3
+- archetype: burrow-hopper
+  count: 30
+  groups: 3
+- archetype: pack-runner
+  count: 8
+  groups: 2
+- archetype: grub-snuffler
+  count: 10
+  groups: 2
+targets:
+  herbivores: 80
+  predators: 10
+  max_population: 280

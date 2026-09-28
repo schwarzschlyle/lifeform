@@ -1,0 +1,40 @@
+slug: lightless-hollows
+title: Lightless Hollows
+biome: cave network
+stretch: true
+description: A cave network where light is zero and food is fungi and grubs.
+question: Do eyes regress when they cost energy and see nothing?
+palette: lightless-hollows
+default_ticks: 2000
+grid:
+  width: 128
+  height: 128
+terrain:
+  water_fraction: 0.02
+  moisture_base: 0.6
+  feature_stamps:
+  - kind: caves
+    count: 5
+    min_radius: 18
+    max_radius: 26
+climate:
+  equator_temperature_c: 16
+  latitudinal_range_c: 6
+  seasonal_amplitude_c: 6
+  diurnal_amplitude_c: 6
+  weather_profile: temperate
+  rain_mm_per_tick: 1.5
+founders:
+- archetype: grub-snuffler
+  count: 30
+  groups: 3
+- archetype: bristle-forager
+  count: 20
+  groups: 2
+- archetype: shell-crawler
+  count: 10
+  groups: 2
+targets:
+  herbivores: 45
+  predators: 6
+  max_population: 200

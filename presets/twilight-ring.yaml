@@ -1,0 +1,40 @@
+slug: twilight-ring
+title: Twilight Ring
+biome: tidally locked planet
+description: 'One face always toward a red sun: scorched day side, frozen night side,
+  and life on the ring between.'
+question: How do circadian and vision traits evolve without day and night?
+palette: twilight-ring
+grid:
+  width: 192
+  height: 192
+terrain:
+  water_fraction: 0.08
+  moisture_base: 0.5
+climate:
+  tidally_locked: true
+  day_side_temperature_c: 60
+  night_side_temperature_c: -50
+  diurnal_amplitude_c: 0
+  seasonal_amplitude_c: 0
+  weather_profile: constant
+  rain_mm_per_tick: 1.5
+  wind_speed: 0.8
+  prevailing_wind_degrees: 90
+founders:
+- archetype: bristle-forager
+  count: 30
+  groups: 3
+- archetype: grub-snuffler
+  count: 20
+  groups: 3
+- archetype: shell-crawler
+  count: 15
+  groups: 2
+- archetype: stripe-stalker
+  count: 5
+  groups: 2
+targets:
+  herbivores: 70
+  predators: 6
+  max_population: 260
